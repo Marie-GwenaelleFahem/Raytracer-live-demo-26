@@ -68,13 +68,25 @@ ctest --test-dir build --output-on-failure
 
 ---
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to set up the environment,
+run the tests, and submit a change.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 ## Project layout
 
 ```
 .devcontainer/      Dev container configuration
+.github/            CI workflow, PR and issue templates
 src/                Source code
 tests/              Tests (Catch2)
 docs/               Documentation
   discovery/        Discovery report
+  adr/              Architecture Decision Records
 CMakeLists.txt      Build configuration
+Makefile            Shortcut commands (make build, make test, etc.)
 ```
