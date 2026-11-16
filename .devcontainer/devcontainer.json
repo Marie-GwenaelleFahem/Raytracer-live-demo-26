@@ -1,0 +1,17 @@
+{
+  "name": "Raytracer C++",
+  "image": "mcr.microsoft.com/devcontainers/cpp:1-debian-12",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "ms-vscode.cpptools-extension-pack"
+      ],
+      "settings": {
+        "cmake.configureOnOpen": true
+      }
+    }
+  },
+  "postCreateCommand": "cmake -B build -DCMAKE_BUILD_TYPE=Debug && cmake --build build"
+}
