@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.o CMakeFiles/raytracer_tests.dir/vector_test.cpp.o -o raytracer_tests  ../_deps/catch2-build/src/libCatch2Maind.a ../libraytracer_lib.a ../_deps/catch2-build/src/libCatch2d.a 
+/usr/bin/c++ -g CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.o CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.o -o raytracer_tests  ../_deps/catch2-build/src/libCatch2Maind.a ../libraytracer_lib.a ../_deps/catch2-build/src/libCatch2d.a 

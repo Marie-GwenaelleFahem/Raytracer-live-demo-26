@@ -83,30 +83,30 @@ tests/CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.s"
 	cd /workspaces/raytracer-live-demo-26/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/raytracer-live-demo-26/tests/placeholder_test.cpp -o CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.s
 
-tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.o: tests/CMakeFiles/raytracer_tests.dir/flags.make
-tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.o: /workspaces/raytracer-live-demo-26/tests/vector_test.cpp
-tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.o: tests/CMakeFiles/raytracer_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/raytracer-live-demo-26/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.o"
-	cd /workspaces/raytracer-live-demo-26/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.o -MF CMakeFiles/raytracer_tests.dir/vector_test.cpp.o.d -o CMakeFiles/raytracer_tests.dir/vector_test.cpp.o -c /workspaces/raytracer-live-demo-26/tests/vector_test.cpp
+tests/CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.o: tests/CMakeFiles/raytracer_tests.dir/flags.make
+tests/CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.o: /workspaces/raytracer-live-demo-26/tests/math/vector/vector_test.cpp
+tests/CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.o: tests/CMakeFiles/raytracer_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/raytracer-live-demo-26/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.o"
+	cd /workspaces/raytracer-live-demo-26/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.o -MF CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.o.d -o CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.o -c /workspaces/raytracer-live-demo-26/tests/math/vector/vector_test.cpp
 
-tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer_tests.dir/vector_test.cpp.i"
-	cd /workspaces/raytracer-live-demo-26/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/raytracer-live-demo-26/tests/vector_test.cpp > CMakeFiles/raytracer_tests.dir/vector_test.cpp.i
+tests/CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.i"
+	cd /workspaces/raytracer-live-demo-26/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/raytracer-live-demo-26/tests/math/vector/vector_test.cpp > CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.i
 
-tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer_tests.dir/vector_test.cpp.s"
-	cd /workspaces/raytracer-live-demo-26/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/raytracer-live-demo-26/tests/vector_test.cpp -o CMakeFiles/raytracer_tests.dir/vector_test.cpp.s
+tests/CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.s"
+	cd /workspaces/raytracer-live-demo-26/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/raytracer-live-demo-26/tests/math/vector/vector_test.cpp -o CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.s
 
 # Object files for target raytracer_tests
 raytracer_tests_OBJECTS = \
 "CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.o" \
-"CMakeFiles/raytracer_tests.dir/vector_test.cpp.o"
+"CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.o"
 
 # External object files for target raytracer_tests
 raytracer_tests_EXTERNAL_OBJECTS =
 
 tests/raytracer_tests: tests/CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.o
-tests/raytracer_tests: tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.o
+tests/raytracer_tests: tests/CMakeFiles/raytracer_tests.dir/math/vector/vector_test.cpp.o
 tests/raytracer_tests: tests/CMakeFiles/raytracer_tests.dir/build.make
 tests/raytracer_tests: _deps/catch2-build/src/libCatch2Maind.a
 tests/raytracer_tests: libraytracer_lib.a

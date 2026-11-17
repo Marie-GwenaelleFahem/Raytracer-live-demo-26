@@ -7,9 +7,9 @@ TEST_CASE("Vector addition", "[vector]")
     Vector b(4, 5, 6);
     Vector result = a.add(b);
 
-    REQUIRE(result.getX() == 5);
-    REQUIRE(result.getY() == 7);
-    REQUIRE(result.getZ() == 9);
+    REQUIRE(result.x() == 5);
+    REQUIRE(result.y() == 7);
+    REQUIRE(result.z() == 9);
 }
 
 TEST_CASE("Vector subtraction", "[vector]")
@@ -18,7 +18,7 @@ TEST_CASE("Vector subtraction", "[vector]")
     Vector b(-5, 2, 1);
     Vector result = a.subtract(b);
 
-    REQUIRE(result.getX() == 4);
-    REQUIRE(result.getY() == 2);
-    REQUIRE(result.getZ() == -1);
+    REQUIRE(result.x() == 4);
+    REQUIRE(result.y() == 2);
+    REQUIRE(result.z() == -1);
 }

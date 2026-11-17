@@ -1,4 +1,7 @@
-placeholder always passes 1 0.0324547
-Vector addition 1 0.0342157
-Vector subtraction 1 0.0364764
+placeholder 0 0
+Vector 0 1
+Vector 0 1
+placeholder always passes 1 0.0304566
+Vector addition 1 0.0347659
+Vector subtraction 1 0.030841
 ---

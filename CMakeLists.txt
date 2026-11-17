@@ -13,8 +13,8 @@ else()
 endif()
 
 # Raytracer library
-add_library(raytracer_lib src/Vector.cpp)
-target_include_directories(raytracer_lib PUBLIC src)
+add_library(raytracer_lib src/math/vector/Vector.cpp)
+target_include_directories(raytracer_lib PUBLIC src/math/vector)
 
 # Main executable
 add_executable(raytracer src/main.cpp)

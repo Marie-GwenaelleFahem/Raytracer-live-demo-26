@@ -555,30 +555,6 @@ Catch2WithMain/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
 .PHONY : Catch2WithMain/fast
 
-src/Vector.o: src/Vector.cpp.o
-.PHONY : src/Vector.o
-
-# target to build an object file
-src/Vector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/Vector.cpp.o
-.PHONY : src/Vector.cpp.o
-
-src/Vector.i: src/Vector.cpp.i
-.PHONY : src/Vector.i
-
-# target to preprocess a source file
-src/Vector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/Vector.cpp.i
-.PHONY : src/Vector.cpp.i
-
-src/Vector.s: src/Vector.cpp.s
-.PHONY : src/Vector.s
-
-# target to generate assembly for a file
-src/Vector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/Vector.cpp.s
-.PHONY : src/Vector.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -602,6 +578,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/math/vector/Vector.o: src/math/vector/Vector.cpp.o
+.PHONY : src/math/vector/Vector.o
+
+# target to build an object file
+src/math/vector/Vector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/math/vector/Vector.cpp.o
+.PHONY : src/math/vector/Vector.cpp.o
+
+src/math/vector/Vector.i: src/math/vector/Vector.cpp.i
+.PHONY : src/math/vector/Vector.i
+
+# target to preprocess a source file
+src/math/vector/Vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/math/vector/Vector.cpp.i
+.PHONY : src/math/vector/Vector.cpp.i
+
+src/math/vector/Vector.s: src/math/vector/Vector.cpp.s
+.PHONY : src/math/vector/Vector.s
+
+# target to generate assembly for a file
+src/math/vector/Vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/math/vector/Vector.cpp.s
+.PHONY : src/math/vector/Vector.cpp.s
 
 # Help Target
 help:
@@ -645,12 +645,12 @@ help:
 	@echo "... raytracer"
 	@echo "... raytracer_lib"
 	@echo "... raytracer_tests"
-	@echo "... src/Vector.o"
-	@echo "... src/Vector.i"
-	@echo "... src/Vector.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/math/vector/Vector.o"
+	@echo "... src/math/vector/Vector.i"
+	@echo "... src/math/vector/Vector.s"
 .PHONY : help
 
 

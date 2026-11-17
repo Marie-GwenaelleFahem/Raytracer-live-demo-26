@@ -14,6 +14,13 @@ Architecture Decision Records live in `docs/adr/`. Read them before changing the
 - Never go against an accepted ADR.
 - To change a decision, write a new ADR with status **Proposed** and ask the developer. Never set an ADR status to **Accepted** yourself.
 
+# Code style
+
+- Private member variables use a `_` prefix (e.g. `_x`, `_name`).
+- Getter methods do not use a `get` prefix — name them after the value they return (e.g. `x()`, not `getX()`).
+- Source files are grouped by concept under `src/<concept>/` (e.g. `src/math/vector/`).
+- Tests mirror the source structure under `tests/<concept>/` (e.g. `tests/math/vector/`).
+
 # Contributing and open source
 
 - [CONTRIBUTING.md](CONTRIBUTING.md): setup, commands, TDD workflow, ADR process.

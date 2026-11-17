@@ -5,17 +5,17 @@ class Vector {
 public:
     Vector(double x, double y, double z);
 
-    double getX() const;
-    double getY() const;
-    double getZ() const;
+    double x() const;
+    double y() const;
+    double z() const;
 
     Vector add(const Vector& other) const;
     Vector subtract(const Vector& other) const;
 
 private:
-    double m_x;
-    double m_y;
-    double m_z;
+    double _x;
+    double _y;
+    double _z;
 };
 
 #endif
