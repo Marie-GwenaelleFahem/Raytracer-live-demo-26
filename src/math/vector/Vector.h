@@ -9,8 +9,8 @@ public:
     double y() const;
     double z() const;
 
-    Vector add(const Vector& other) const;
-    Vector subtract(const Vector& other) const;
+    Vector operator+(const Vector& other) const;
+    Vector operator-(const Vector& other) const;
 
 private:
     double _x;
