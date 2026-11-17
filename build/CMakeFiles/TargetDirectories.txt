@@ -1,3 +1,4 @@
+/workspaces/raytracer-live-demo-26/build/CMakeFiles/raytracer_lib.dir
 /workspaces/raytracer-live-demo-26/build/CMakeFiles/raytracer.dir
 /workspaces/raytracer-live-demo-26/build/CMakeFiles/test.dir
 /workspaces/raytracer-live-demo-26/build/CMakeFiles/edit_cache.dir

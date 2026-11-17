@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/workspaces/raytracer-live-demo-26/src
 
 CXX_FLAGS = -g -Wall -Wextra -Wpedantic -Werror -std=c++20
 

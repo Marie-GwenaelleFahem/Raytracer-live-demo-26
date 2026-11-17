@@ -1,14 +1,14 @@
-Start testing: Nov 16 18:18 UTC
+Start testing: Nov 17 15:23 UTC
 ----------------------------------------------------------
-1/1 Testing: placeholder always passes
-1/1 Test: placeholder always passes
+1/3 Testing: placeholder always passes
+1/3 Test: placeholder always passes
 Command: "/workspaces/raytracer-live-demo-26/build/tests/raytracer_tests" "placeholder always passes"
 Directory: /workspaces/raytracer-live-demo-26/build/tests
-"placeholder always passes" start time: Nov 16 18:18 UTC
+"placeholder always passes" start time: Nov 17 15:23 UTC
 Output:
 ----------------------------------------------------------
 Filters: "placeholder always passes"
-Randomness seeded to: 183414235
+Randomness seeded to: 1548159099
 ===============================================================================
 All tests passed (1 assertion in 1 test case)
 
@@ -16,8 +16,48 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"placeholder always passes" end time: Nov 16 18:18 UTC
+"placeholder always passes" end time: Nov 17 15:23 UTC
 "placeholder always passes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 16 18:18 UTC
+2/3 Testing: Vector addition
+2/3 Test: Vector addition
+Command: "/workspaces/raytracer-live-demo-26/build/tests/raytracer_tests" "Vector addition"
+Directory: /workspaces/raytracer-live-demo-26/build/tests
+"Vector addition" start time: Nov 17 15:23 UTC
+Output:
+----------------------------------------------------------
+Filters: "Vector addition"
+Randomness seeded to: 1250807191
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Vector addition" end time: Nov 17 15:23 UTC
+"Vector addition" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: Vector subtraction
+3/3 Test: Vector subtraction
+Command: "/workspaces/raytracer-live-demo-26/build/tests/raytracer_tests" "Vector subtraction"
+Directory: /workspaces/raytracer-live-demo-26/build/tests
+"Vector subtraction" start time: Nov 17 15:23 UTC
+Output:
+----------------------------------------------------------
+Filters: "Vector subtraction"
+Randomness seeded to: 2922738385
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"Vector subtraction" end time: Nov 17 15:23 UTC
+"Vector subtraction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 17 15:23 UTC

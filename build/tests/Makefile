@@ -556,6 +556,30 @@ placeholder_test.cpp.s:
 	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.s
 .PHONY : placeholder_test.cpp.s
 
+vector_test.o: vector_test.cpp.o
+.PHONY : vector_test.o
+
+# target to build an object file
+vector_test.cpp.o:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.o
+.PHONY : vector_test.cpp.o
+
+vector_test.i: vector_test.cpp.i
+.PHONY : vector_test.i
+
+# target to preprocess a source file
+vector_test.cpp.i:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.i
+.PHONY : vector_test.cpp.i
+
+vector_test.s: vector_test.cpp.s
+.PHONY : vector_test.s
+
+# target to generate assembly for a file
+vector_test.cpp.s:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.s
+.PHONY : vector_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -597,6 +621,9 @@ help:
 	@echo "... placeholder_test.o"
 	@echo "... placeholder_test.i"
 	@echo "... placeholder_test.s"
+	@echo "... vector_test.o"
+	@echo "... vector_test.i"
+	@echo "... vector_test.s"
 .PHONY : help
 
 

@@ -12,8 +12,13 @@ else()
   add_compile_options(-Wall -Wextra -Wpedantic -Werror)
 endif()
 
+# Raytracer library
+add_library(raytracer_lib src/Vector.cpp)
+target_include_directories(raytracer_lib PUBLIC src)
+
 # Main executable
 add_executable(raytracer src/main.cpp)
+target_link_libraries(raytracer PRIVATE raytracer_lib)
 
 # Tests
 enable_testing()

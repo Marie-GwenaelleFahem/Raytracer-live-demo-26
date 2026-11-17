@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.o"
   "CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.o.d"
+  "CMakeFiles/raytracer_tests.dir/vector_test.cpp.o"
+  "CMakeFiles/raytracer_tests.dir/vector_test.cpp.o.d"
   "raytracer_tests"
   "raytracer_tests-b12d07c_tests.cmake"
   "raytracer_tests.pdb"

@@ -83,19 +83,36 @@ tests/CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.s"
 	cd /workspaces/raytracer-live-demo-26/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/raytracer-live-demo-26/tests/placeholder_test.cpp -o CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.s
 
+tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.o: tests/CMakeFiles/raytracer_tests.dir/flags.make
+tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.o: /workspaces/raytracer-live-demo-26/tests/vector_test.cpp
+tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.o: tests/CMakeFiles/raytracer_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/raytracer-live-demo-26/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.o"
+	cd /workspaces/raytracer-live-demo-26/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.o -MF CMakeFiles/raytracer_tests.dir/vector_test.cpp.o.d -o CMakeFiles/raytracer_tests.dir/vector_test.cpp.o -c /workspaces/raytracer-live-demo-26/tests/vector_test.cpp
+
+tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raytracer_tests.dir/vector_test.cpp.i"
+	cd /workspaces/raytracer-live-demo-26/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/raytracer-live-demo-26/tests/vector_test.cpp > CMakeFiles/raytracer_tests.dir/vector_test.cpp.i
+
+tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raytracer_tests.dir/vector_test.cpp.s"
+	cd /workspaces/raytracer-live-demo-26/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/raytracer-live-demo-26/tests/vector_test.cpp -o CMakeFiles/raytracer_tests.dir/vector_test.cpp.s
+
 # Object files for target raytracer_tests
 raytracer_tests_OBJECTS = \
-"CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.o"
+"CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.o" \
+"CMakeFiles/raytracer_tests.dir/vector_test.cpp.o"
 
 # External object files for target raytracer_tests
 raytracer_tests_EXTERNAL_OBJECTS =
 
 tests/raytracer_tests: tests/CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.o
+tests/raytracer_tests: tests/CMakeFiles/raytracer_tests.dir/vector_test.cpp.o
 tests/raytracer_tests: tests/CMakeFiles/raytracer_tests.dir/build.make
 tests/raytracer_tests: _deps/catch2-build/src/libCatch2Maind.a
+tests/raytracer_tests: libraytracer_lib.a
 tests/raytracer_tests: _deps/catch2-build/src/libCatch2d.a
 tests/raytracer_tests: tests/CMakeFiles/raytracer_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/raytracer-live-demo-26/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable raytracer_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/raytracer-live-demo-26/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable raytracer_tests"
 	cd /workspaces/raytracer-live-demo-26/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/raytracer_tests.dir/link.txt --verbose=$(VERBOSE)
 	cd /workspaces/raytracer-live-demo-26/build/tests && /usr/bin/cmake -D TEST_TARGET=raytracer_tests -D TEST_EXECUTABLE=/workspaces/raytracer-live-demo-26/build/tests/raytracer_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/workspaces/raytracer-live-demo-26/build/tests -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D "TEST_PROPERTIES=SKIP_RETURN_CODE;4" -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=raytracer_tests_TESTS -D TEST_REPORTER= -D TEST_OUTPUT_DIR= -D TEST_OUTPUT_PREFIX= -D TEST_OUTPUT_SUFFIX= -D TEST_DL_PATHS= -D TEST_DL_FRAMEWORK_PATHS= -D CTEST_FILE=/workspaces/raytracer-live-demo-26/build/tests/raytracer_tests-b12d07c_tests.cmake -P /workspaces/raytracer-live-demo-26/build/_deps/catch2-src/extras/CatchAddTests.cmake
 

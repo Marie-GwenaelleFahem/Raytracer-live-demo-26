@@ -1,3 +1,7 @@
 add_test( [==[placeholder always passes]==] /workspaces/raytracer-live-demo-26/build/tests/raytracer_tests [==[placeholder always passes]==]  )
 set_tests_properties( [==[placeholder always passes]==] PROPERTIES WORKING_DIRECTORY /workspaces/raytracer-live-demo-26/build/tests SKIP_RETURN_CODE 4)
-set( raytracer_tests_TESTS [==[placeholder always passes]==])
+add_test( [==[Vector addition]==] /workspaces/raytracer-live-demo-26/build/tests/raytracer_tests [==[Vector addition]==]  )
+set_tests_properties( [==[Vector addition]==] PROPERTIES WORKING_DIRECTORY /workspaces/raytracer-live-demo-26/build/tests SKIP_RETURN_CODE 4)
+add_test( [==[Vector subtraction]==] /workspaces/raytracer-live-demo-26/build/tests/raytracer_tests [==[Vector subtraction]==]  )
+set_tests_properties( [==[Vector subtraction]==] PROPERTIES WORKING_DIRECTORY /workspaces/raytracer-live-demo-26/build/tests SKIP_RETURN_CODE 4)
+set( raytracer_tests_TESTS [==[placeholder always passes]==] [==[Vector addition]==] [==[Vector subtraction]==])

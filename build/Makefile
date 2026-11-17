@@ -127,6 +127,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named raytracer_lib
+
+# Build rule for target.
+raytracer_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 raytracer_lib
+.PHONY : raytracer_lib
+
+# fast build rule for target.
+raytracer_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/build
+.PHONY : raytracer_lib/fast
+
+#=============================================================================
 # Target rules for targets named raytracer
 
 # Build rule for target.
@@ -542,6 +555,30 @@ Catch2WithMain/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
 .PHONY : Catch2WithMain/fast
 
+src/Vector.o: src/Vector.cpp.o
+.PHONY : src/Vector.o
+
+# target to build an object file
+src/Vector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/Vector.cpp.o
+.PHONY : src/Vector.cpp.o
+
+src/Vector.i: src/Vector.cpp.i
+.PHONY : src/Vector.i
+
+# target to preprocess a source file
+src/Vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/Vector.cpp.i
+.PHONY : src/Vector.cpp.i
+
+src/Vector.s: src/Vector.cpp.s
+.PHONY : src/Vector.s
+
+# target to generate assembly for a file
+src/Vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/Vector.cpp.s
+.PHONY : src/Vector.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -606,7 +643,11 @@ help:
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
 	@echo "... raytracer"
+	@echo "... raytracer_lib"
 	@echo "... raytracer_tests"
+	@echo "... src/Vector.o"
+	@echo "... src/Vector.i"
+	@echo "... src/Vector.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

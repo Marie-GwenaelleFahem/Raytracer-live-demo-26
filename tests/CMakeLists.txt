@@ -7,8 +7,8 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(raytracer_tests placeholder_test.cpp)
-target_link_libraries(raytracer_tests PRIVATE Catch2::Catch2WithMain)
+add_executable(raytracer_tests placeholder_test.cpp vector_test.cpp)
+target_link_libraries(raytracer_tests PRIVATE Catch2::Catch2WithMain raytracer_lib)
 
 include(CTest)
 include(Catch)
