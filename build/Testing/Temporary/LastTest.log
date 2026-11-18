@@ -1,14 +1,14 @@
-Start testing: Nov 17 15:30 UTC
+Start testing: Nov 18 11:02 UTC
 ----------------------------------------------------------
-1/3 Testing: placeholder always passes
-1/3 Test: placeholder always passes
+1/8 Testing: placeholder always passes
+1/8 Test: placeholder always passes
 Command: "/workspaces/raytracer-live-demo-26/build/tests/raytracer_tests" "placeholder always passes"
 Directory: /workspaces/raytracer-live-demo-26/build/tests
-"placeholder always passes" start time: Nov 17 15:30 UTC
+"placeholder always passes" start time: Nov 18 11:02 UTC
 Output:
 ----------------------------------------------------------
 Filters: "placeholder always passes"
-Randomness seeded to: 2117360550
+Randomness seeded to: 1211788942
 ===============================================================================
 All tests passed (1 assertion in 1 test case)
 
@@ -16,19 +16,19 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"placeholder always passes" end time: Nov 17 15:30 UTC
+"placeholder always passes" end time: Nov 18 11:02 UTC
 "placeholder always passes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/3 Testing: Vector addition
-2/3 Test: Vector addition
+2/8 Testing: Vector addition
+2/8 Test: Vector addition
 Command: "/workspaces/raytracer-live-demo-26/build/tests/raytracer_tests" "Vector addition"
 Directory: /workspaces/raytracer-live-demo-26/build/tests
-"Vector addition" start time: Nov 17 15:30 UTC
+"Vector addition" start time: Nov 18 11:02 UTC
 Output:
 ----------------------------------------------------------
 Filters: "Vector addition"
-Randomness seeded to: 3233250670
+Randomness seeded to: 1804335432
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
@@ -36,28 +36,128 @@ All tests passed (3 assertions in 1 test case)
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"Vector addition" end time: Nov 17 15:30 UTC
+"Vector addition" end time: Nov 18 11:02 UTC
 "Vector addition" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/3 Testing: Vector subtraction
-3/3 Test: Vector subtraction
+3/8 Testing: Vector subtraction
+3/8 Test: Vector subtraction
 Command: "/workspaces/raytracer-live-demo-26/build/tests/raytracer_tests" "Vector subtraction"
 Directory: /workspaces/raytracer-live-demo-26/build/tests
-"Vector subtraction" start time: Nov 17 15:30 UTC
+"Vector subtraction" start time: Nov 18 11:02 UTC
 Output:
 ----------------------------------------------------------
 Filters: "Vector subtraction"
-Randomness seeded to: 1998995731
+Randomness seeded to: 2308287228
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
 <end of output>
-Test time =   0.04 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"Vector subtraction" end time: Nov 17 15:30 UTC
+"Vector subtraction" end time: Nov 18 11:02 UTC
 "Vector subtraction" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 17 15:30 UTC
+4/8 Testing: t * v scales each component
+4/8 Test: t * v scales each component
+Command: "/workspaces/raytracer-live-demo-26/build/tests/raytracer_tests" "t * v scales each component"
+Directory: /workspaces/raytracer-live-demo-26/build/tests
+"t * v scales each component" start time: Nov 18 11:02 UTC
+Output:
+----------------------------------------------------------
+Filters: "t * v scales each component"
+Randomness seeded to: 2793970050
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"t * v scales each component" end time: Nov 18 11:02 UTC
+"t * v scales each component" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/8 Testing: O + t * D gives the point on the ray at t
+5/8 Test: O + t * D gives the point on the ray at t
+Command: "/workspaces/raytracer-live-demo-26/build/tests/raytracer_tests" "O + t * D gives the point on the ray at t"
+Directory: /workspaces/raytracer-live-demo-26/build/tests
+"O + t * D gives the point on the ray at t" start time: Nov 18 11:02 UTC
+Output:
+----------------------------------------------------------
+Filters: "O + t * D gives the point on the ray at t"
+Randomness seeded to: 808437015
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"O + t * D gives the point on the ray at t" end time: Nov 18 11:02 UTC
+"O + t * D gives the point on the ray at t" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/8 Testing: dot multiplies in pairs, then adds
+6/8 Test: dot multiplies in pairs, then adds
+Command: "/workspaces/raytracer-live-demo-26/build/tests/raytracer_tests" "dot multiplies in pairs\, then adds"
+Directory: /workspaces/raytracer-live-demo-26/build/tests
+"dot multiplies in pairs, then adds" start time: Nov 18 11:02 UTC
+Output:
+----------------------------------------------------------
+Filters: "dot multiplies in pairs\, then adds"
+Randomness seeded to: 3880595463
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"dot multiplies in pairs, then adds" end time: Nov 18 11:02 UTC
+"dot multiplies in pairs, then adds" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/8 Testing: length follows Pythagoras
+7/8 Test: length follows Pythagoras
+Command: "/workspaces/raytracer-live-demo-26/build/tests/raytracer_tests" "length follows Pythagoras"
+Directory: /workspaces/raytracer-live-demo-26/build/tests
+"length follows Pythagoras" start time: Nov 18 11:02 UTC
+Output:
+----------------------------------------------------------
+Filters: "length follows Pythagoras"
+Randomness seeded to: 2897742005
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"length follows Pythagoras" end time: Nov 18 11:02 UTC
+"length follows Pythagoras" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/8 Testing: normalised keeps the direction and gives length 1
+8/8 Test: normalised keeps the direction and gives length 1
+Command: "/workspaces/raytracer-live-demo-26/build/tests/raytracer_tests" "normalised keeps the direction and gives length 1"
+Directory: /workspaces/raytracer-live-demo-26/build/tests
+"normalised keeps the direction and gives length 1" start time: Nov 18 11:02 UTC
+Output:
+----------------------------------------------------------
+Filters: "normalised keeps the direction and gives length 1"
+Randomness seeded to: 1242786791
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"normalised keeps the direction and gives length 1" end time: Nov 18 11:02 UTC
+"normalised keeps the direction and gives length 1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 18 11:02 UTC

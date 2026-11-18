@@ -4,7 +4,15 @@ Vector 0 1
 placeholder 0 0
 Vector 0 1
 Vector 0 1
-placeholder always passes 1 0.0323236
-Vector addition 1 0.0301395
-Vector subtraction 1 0.039194
+placeholder 0 0
+Vector 0 1
+Vector 0 1
+placeholder always passes 1 0.0339192
+Vector addition 1 0.0301731
+Vector subtraction 1 0.0305637
+t * v scales each component 1 0.0320823
+O + t * D gives the point on the ray at t 1 0.031371
+dot multiplies in pairs, then adds 1 0.0303863
+length follows Pythagoras 1 0.0314622
+normalised keeps the direction and gives length 1 1 0.0328088
 ---
