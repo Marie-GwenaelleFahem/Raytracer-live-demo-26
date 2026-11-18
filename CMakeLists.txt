@@ -16,11 +16,11 @@ endif()
 # Raytracer library
 add_library(raytracer_lib
     src/math/vector.cpp
-    src/colour/Colour.cpp
+    src/colour/colour.cpp
     src/geometry/ray.cpp
     src/geometry/sphere.cpp
-    src/render/Camera.cpp
-    src/render/Trace.cpp
+    src/render/camera.cpp
+    src/render/trace.cpp
 )
 target_include_directories(raytracer_lib PUBLIC src)
 
