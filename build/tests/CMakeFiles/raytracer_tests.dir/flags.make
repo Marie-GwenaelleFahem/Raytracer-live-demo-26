@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/workspaces/raytracer-live-demo-26/build/_deps/catch2-src/src/catch2/.. -I/workspaces/raytracer-live-demo-26/build/_deps/catch2-build/generated-includes -I/workspaces/raytracer-live-demo-26/src/math/vector
+CXX_INCLUDES = -I/workspaces/raytracer-live-demo-26/tests -I/workspaces/raytracer-live-demo-26/build/_deps/catch2-src/src/catch2/.. -I/workspaces/raytracer-live-demo-26/build/_deps/catch2-build/generated-includes -I/workspaces/raytracer-live-demo-26/src
 
 CXX_FLAGS = -g -Wall -Wextra -Wpedantic -Werror -std=c++20
 

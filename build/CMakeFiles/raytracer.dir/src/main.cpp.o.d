@@ -151,4 +151,10 @@ CMakeFiles/raytracer.dir/src/main.cpp.o: \
  /usr/include/c++/12/bits/locale_facets.tcc \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
- /usr/include/c++/12/bits/istream.tcc
+ /usr/include/c++/12/bits/istream.tcc \
+ /workspaces/raytracer-live-demo-26/src/colour/colour.h \
+ /workspaces/raytracer-live-demo-26/src/geometry/ray.h \
+ /workspaces/raytracer-live-demo-26/src/math/vector.h \
+ /workspaces/raytracer-live-demo-26/src/geometry/sphere.h \
+ /workspaces/raytracer-live-demo-26/src/render/camera.h \
+ /workspaces/raytracer-live-demo-26/src/render/trace.h

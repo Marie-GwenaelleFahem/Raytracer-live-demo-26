@@ -532,6 +532,78 @@ ContinuousSubmit/fast:
 	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousSubmit.dir/build.make tests/CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
+colour/test_colour.o: colour/test_colour.cpp.o
+.PHONY : colour/test_colour.o
+
+# target to build an object file
+colour/test_colour.cpp.o:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/colour/test_colour.cpp.o
+.PHONY : colour/test_colour.cpp.o
+
+colour/test_colour.i: colour/test_colour.cpp.i
+.PHONY : colour/test_colour.i
+
+# target to preprocess a source file
+colour/test_colour.cpp.i:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/colour/test_colour.cpp.i
+.PHONY : colour/test_colour.cpp.i
+
+colour/test_colour.s: colour/test_colour.cpp.s
+.PHONY : colour/test_colour.s
+
+# target to generate assembly for a file
+colour/test_colour.cpp.s:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/colour/test_colour.cpp.s
+.PHONY : colour/test_colour.cpp.s
+
+geometry/test_ray.o: geometry/test_ray.cpp.o
+.PHONY : geometry/test_ray.o
+
+# target to build an object file
+geometry/test_ray.cpp.o:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/geometry/test_ray.cpp.o
+.PHONY : geometry/test_ray.cpp.o
+
+geometry/test_ray.i: geometry/test_ray.cpp.i
+.PHONY : geometry/test_ray.i
+
+# target to preprocess a source file
+geometry/test_ray.cpp.i:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/geometry/test_ray.cpp.i
+.PHONY : geometry/test_ray.cpp.i
+
+geometry/test_ray.s: geometry/test_ray.cpp.s
+.PHONY : geometry/test_ray.s
+
+# target to generate assembly for a file
+geometry/test_ray.cpp.s:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/geometry/test_ray.cpp.s
+.PHONY : geometry/test_ray.cpp.s
+
+geometry/test_sphere.o: geometry/test_sphere.cpp.o
+.PHONY : geometry/test_sphere.o
+
+# target to build an object file
+geometry/test_sphere.cpp.o:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/geometry/test_sphere.cpp.o
+.PHONY : geometry/test_sphere.cpp.o
+
+geometry/test_sphere.i: geometry/test_sphere.cpp.i
+.PHONY : geometry/test_sphere.i
+
+# target to preprocess a source file
+geometry/test_sphere.cpp.i:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/geometry/test_sphere.cpp.i
+.PHONY : geometry/test_sphere.cpp.i
+
+geometry/test_sphere.s: geometry/test_sphere.cpp.s
+.PHONY : geometry/test_sphere.s
+
+# target to generate assembly for a file
+geometry/test_sphere.cpp.s:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/geometry/test_sphere.cpp.s
+.PHONY : geometry/test_sphere.cpp.s
+
 math/vector/vector_test.o: math/vector/vector_test.cpp.o
 .PHONY : math/vector/vector_test.o
 
@@ -580,6 +652,78 @@ placeholder_test.cpp.s:
 	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/placeholder_test.cpp.s
 .PHONY : placeholder_test.cpp.s
 
+render/test_camera.o: render/test_camera.cpp.o
+.PHONY : render/test_camera.o
+
+# target to build an object file
+render/test_camera.cpp.o:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/render/test_camera.cpp.o
+.PHONY : render/test_camera.cpp.o
+
+render/test_camera.i: render/test_camera.cpp.i
+.PHONY : render/test_camera.i
+
+# target to preprocess a source file
+render/test_camera.cpp.i:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/render/test_camera.cpp.i
+.PHONY : render/test_camera.cpp.i
+
+render/test_camera.s: render/test_camera.cpp.s
+.PHONY : render/test_camera.s
+
+# target to generate assembly for a file
+render/test_camera.cpp.s:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/render/test_camera.cpp.s
+.PHONY : render/test_camera.cpp.s
+
+render/test_trace.o: render/test_trace.cpp.o
+.PHONY : render/test_trace.o
+
+# target to build an object file
+render/test_trace.cpp.o:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/render/test_trace.cpp.o
+.PHONY : render/test_trace.cpp.o
+
+render/test_trace.i: render/test_trace.cpp.i
+.PHONY : render/test_trace.i
+
+# target to preprocess a source file
+render/test_trace.cpp.i:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/render/test_trace.cpp.i
+.PHONY : render/test_trace.cpp.i
+
+render/test_trace.s: render/test_trace.cpp.s
+.PHONY : render/test_trace.s
+
+# target to generate assembly for a file
+render/test_trace.cpp.s:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/render/test_trace.cpp.s
+.PHONY : render/test_trace.cpp.s
+
+test_helpers.o: test_helpers.cpp.o
+.PHONY : test_helpers.o
+
+# target to build an object file
+test_helpers.cpp.o:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/test_helpers.cpp.o
+.PHONY : test_helpers.cpp.o
+
+test_helpers.i: test_helpers.cpp.i
+.PHONY : test_helpers.i
+
+# target to preprocess a source file
+test_helpers.cpp.i:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/test_helpers.cpp.i
+.PHONY : test_helpers.cpp.i
+
+test_helpers.s: test_helpers.cpp.s
+.PHONY : test_helpers.s
+
+# target to generate assembly for a file
+test_helpers.cpp.s:
+	cd /workspaces/raytracer-live-demo-26/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/raytracer_tests.dir/build.make tests/CMakeFiles/raytracer_tests.dir/test_helpers.cpp.s
+.PHONY : test_helpers.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -618,12 +762,30 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... raytracer_tests"
+	@echo "... colour/test_colour.o"
+	@echo "... colour/test_colour.i"
+	@echo "... colour/test_colour.s"
+	@echo "... geometry/test_ray.o"
+	@echo "... geometry/test_ray.i"
+	@echo "... geometry/test_ray.s"
+	@echo "... geometry/test_sphere.o"
+	@echo "... geometry/test_sphere.i"
+	@echo "... geometry/test_sphere.s"
 	@echo "... math/vector/vector_test.o"
 	@echo "... math/vector/vector_test.i"
 	@echo "... math/vector/vector_test.s"
 	@echo "... placeholder_test.o"
 	@echo "... placeholder_test.i"
 	@echo "... placeholder_test.s"
+	@echo "... render/test_camera.o"
+	@echo "... render/test_camera.i"
+	@echo "... render/test_camera.s"
+	@echo "... render/test_trace.o"
+	@echo "... render/test_trace.i"
+	@echo "... render/test_trace.s"
+	@echo "... test_helpers.o"
+	@echo "... test_helpers.i"
+	@echo "... test_helpers.s"
 .PHONY : help
 
 

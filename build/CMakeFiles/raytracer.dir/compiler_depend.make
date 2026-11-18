@@ -190,8 +190,20 @@ CMakeFiles/raytracer.dir/src/main.cpp.o: /workspaces/raytracer-live-demo-26/src/
   /usr/include/c++/12/bits/basic_ios.tcc \
   /usr/include/c++/12/bits/ostream.tcc \
   /usr/include/c++/12/istream \
-  /usr/include/c++/12/bits/istream.tcc
+  /usr/include/c++/12/bits/istream.tcc \
+  /workspaces/raytracer-live-demo-26/src/colour/colour.h \
+  /workspaces/raytracer-live-demo-26/src/geometry/ray.h \
+  /workspaces/raytracer-live-demo-26/src/math/vector.h \
+  /workspaces/raytracer-live-demo-26/src/geometry/sphere.h \
+  /workspaces/raytracer-live-demo-26/src/render/camera.h \
+  /workspaces/raytracer-live-demo-26/src/render/trace.h
 
+
+/workspaces/raytracer-live-demo-26/src/render/camera.h:
+
+/workspaces/raytracer-live-demo-26/src/math/vector.h:
+
+/workspaces/raytracer-live-demo-26/src/geometry/ray.h:
 
 /usr/include/c++/12/bits/basic_ios.tcc:
 
@@ -403,6 +415,8 @@ CMakeFiles/raytracer.dir/src/main.cpp.o: /workspaces/raytracer-live-demo-26/src/
 
 /usr/include/c++/12/bits/cxxabi_forced.h:
 
+/workspaces/raytracer-live-demo-26/src/geometry/sphere.h:
+
 /usr/include/c++/12/ostream:
 
 /usr/include/c++/12/bits/stl_construct.h:
@@ -485,6 +499,8 @@ CMakeFiles/raytracer.dir/src/main.cpp.o: /workspaces/raytracer-live-demo-26/src/
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
+/workspaces/raytracer-live-demo-26/src/colour/colour.h:
+
 /usr/include/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
@@ -518,6 +534,8 @@ CMakeFiles/raytracer.dir/src/main.cpp.o: /workspaces/raytracer-live-demo-26/src/
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/workspaces/raytracer-live-demo-26/src/render/trace.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 

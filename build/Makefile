@@ -555,6 +555,78 @@ Catch2WithMain/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
 .PHONY : Catch2WithMain/fast
 
+src/colour/Colour.o: src/colour/Colour.cpp.o
+.PHONY : src/colour/Colour.o
+
+# target to build an object file
+src/colour/Colour.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/colour/Colour.cpp.o
+.PHONY : src/colour/Colour.cpp.o
+
+src/colour/Colour.i: src/colour/Colour.cpp.i
+.PHONY : src/colour/Colour.i
+
+# target to preprocess a source file
+src/colour/Colour.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/colour/Colour.cpp.i
+.PHONY : src/colour/Colour.cpp.i
+
+src/colour/Colour.s: src/colour/Colour.cpp.s
+.PHONY : src/colour/Colour.s
+
+# target to generate assembly for a file
+src/colour/Colour.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/colour/Colour.cpp.s
+.PHONY : src/colour/Colour.cpp.s
+
+src/geometry/ray.o: src/geometry/ray.cpp.o
+.PHONY : src/geometry/ray.o
+
+# target to build an object file
+src/geometry/ray.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/geometry/ray.cpp.o
+.PHONY : src/geometry/ray.cpp.o
+
+src/geometry/ray.i: src/geometry/ray.cpp.i
+.PHONY : src/geometry/ray.i
+
+# target to preprocess a source file
+src/geometry/ray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/geometry/ray.cpp.i
+.PHONY : src/geometry/ray.cpp.i
+
+src/geometry/ray.s: src/geometry/ray.cpp.s
+.PHONY : src/geometry/ray.s
+
+# target to generate assembly for a file
+src/geometry/ray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/geometry/ray.cpp.s
+.PHONY : src/geometry/ray.cpp.s
+
+src/geometry/sphere.o: src/geometry/sphere.cpp.o
+.PHONY : src/geometry/sphere.o
+
+# target to build an object file
+src/geometry/sphere.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/geometry/sphere.cpp.o
+.PHONY : src/geometry/sphere.cpp.o
+
+src/geometry/sphere.i: src/geometry/sphere.cpp.i
+.PHONY : src/geometry/sphere.i
+
+# target to preprocess a source file
+src/geometry/sphere.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/geometry/sphere.cpp.i
+.PHONY : src/geometry/sphere.cpp.i
+
+src/geometry/sphere.s: src/geometry/sphere.cpp.s
+.PHONY : src/geometry/sphere.s
+
+# target to generate assembly for a file
+src/geometry/sphere.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/geometry/sphere.cpp.s
+.PHONY : src/geometry/sphere.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -579,29 +651,77 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/math/vector/Vector.o: src/math/vector/Vector.cpp.o
-.PHONY : src/math/vector/Vector.o
+src/math/vector.o: src/math/vector.cpp.o
+.PHONY : src/math/vector.o
 
 # target to build an object file
-src/math/vector/Vector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/math/vector/Vector.cpp.o
-.PHONY : src/math/vector/Vector.cpp.o
+src/math/vector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/math/vector.cpp.o
+.PHONY : src/math/vector.cpp.o
 
-src/math/vector/Vector.i: src/math/vector/Vector.cpp.i
-.PHONY : src/math/vector/Vector.i
+src/math/vector.i: src/math/vector.cpp.i
+.PHONY : src/math/vector.i
 
 # target to preprocess a source file
-src/math/vector/Vector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/math/vector/Vector.cpp.i
-.PHONY : src/math/vector/Vector.cpp.i
+src/math/vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/math/vector.cpp.i
+.PHONY : src/math/vector.cpp.i
 
-src/math/vector/Vector.s: src/math/vector/Vector.cpp.s
-.PHONY : src/math/vector/Vector.s
+src/math/vector.s: src/math/vector.cpp.s
+.PHONY : src/math/vector.s
 
 # target to generate assembly for a file
-src/math/vector/Vector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/math/vector/Vector.cpp.s
-.PHONY : src/math/vector/Vector.cpp.s
+src/math/vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/math/vector.cpp.s
+.PHONY : src/math/vector.cpp.s
+
+src/render/Camera.o: src/render/Camera.cpp.o
+.PHONY : src/render/Camera.o
+
+# target to build an object file
+src/render/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/render/Camera.cpp.o
+.PHONY : src/render/Camera.cpp.o
+
+src/render/Camera.i: src/render/Camera.cpp.i
+.PHONY : src/render/Camera.i
+
+# target to preprocess a source file
+src/render/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/render/Camera.cpp.i
+.PHONY : src/render/Camera.cpp.i
+
+src/render/Camera.s: src/render/Camera.cpp.s
+.PHONY : src/render/Camera.s
+
+# target to generate assembly for a file
+src/render/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/render/Camera.cpp.s
+.PHONY : src/render/Camera.cpp.s
+
+src/render/Trace.o: src/render/Trace.cpp.o
+.PHONY : src/render/Trace.o
+
+# target to build an object file
+src/render/Trace.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/render/Trace.cpp.o
+.PHONY : src/render/Trace.cpp.o
+
+src/render/Trace.i: src/render/Trace.cpp.i
+.PHONY : src/render/Trace.i
+
+# target to preprocess a source file
+src/render/Trace.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/render/Trace.cpp.i
+.PHONY : src/render/Trace.cpp.i
+
+src/render/Trace.s: src/render/Trace.cpp.s
+.PHONY : src/render/Trace.s
+
+# target to generate assembly for a file
+src/render/Trace.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer_lib.dir/build.make CMakeFiles/raytracer_lib.dir/src/render/Trace.cpp.s
+.PHONY : src/render/Trace.cpp.s
 
 # Help Target
 help:
@@ -645,12 +765,27 @@ help:
 	@echo "... raytracer"
 	@echo "... raytracer_lib"
 	@echo "... raytracer_tests"
+	@echo "... src/colour/Colour.o"
+	@echo "... src/colour/Colour.i"
+	@echo "... src/colour/Colour.s"
+	@echo "... src/geometry/ray.o"
+	@echo "... src/geometry/ray.i"
+	@echo "... src/geometry/ray.s"
+	@echo "... src/geometry/sphere.o"
+	@echo "... src/geometry/sphere.i"
+	@echo "... src/geometry/sphere.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/math/vector/Vector.o"
-	@echo "... src/math/vector/Vector.i"
-	@echo "... src/math/vector/Vector.s"
+	@echo "... src/math/vector.o"
+	@echo "... src/math/vector.i"
+	@echo "... src/math/vector.s"
+	@echo "... src/render/Camera.o"
+	@echo "... src/render/Camera.i"
+	@echo "... src/render/Camera.s"
+	@echo "... src/render/Trace.o"
+	@echo "... src/render/Trace.i"
+	@echo "... src/render/Trace.s"
 .PHONY : help
 
 

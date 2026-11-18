@@ -1,5 +1,4 @@
-#ifndef VECTOR_H
-#define VECTOR_H
+#pragma once
 
 class Vector {
 public:
@@ -24,4 +23,3 @@ private:
 
 Vector operator*(double t, const Vector& v);
 
-#endif

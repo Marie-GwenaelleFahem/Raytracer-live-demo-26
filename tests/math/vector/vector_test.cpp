@@ -1,4 +1,9 @@
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_floating_point.hpp>
 #include "VectorTestHelpers.h"
+#include "math/vector.h"
+#include "test_helpers.h"
+
 
 TEST_CASE("Vector addition", "[vector]")
 {
@@ -49,3 +54,5 @@ TEST_CASE("normalised keeps the direction and gives length 1", "[vector]") {
     requireVectorsEqual(Vector(3, -4, 0).normalised(), Vector(0.6, -0.8, 0));
     REQUIRE_THAT(Vector(3, 4, 12).normalised().length(), WithinAbs(1, tolerance));
 }
+
+using Catch::Matchers::WithinAbs;
