@@ -7,6 +7,7 @@
 #include "geometry/ray.h"
 #include "geometry/sphere.h"
 #include "image/image.h"
+#include "material/material.h"
 #include "math/vector.h"
 #include "render/camera.h"
 #include "test_helpers.h"
@@ -60,32 +61,32 @@ TEST_CASE("the bottom-left pixel's ray goes left and down", "[camera]") {
 
 TEST_CASE("render gives an image of the size asked for", "[camera]") {
     Camera camera(Vector(0, 0, -1), Vector(0, 0, 0), 5);
-    Sphere sphere(Vector(0, 0, 6), 5, Colour(1, 0, 0));
+    Sphere sphere(Vector(0, 0, 6), 5, Material(Colour(1, 0, 0)));
+    Vector toLight(0, 0, -1);
 
-    Image image = camera.render(sphere, 5, 3);
+    Image image = camera.render(sphere, toLight, 5, 3);
 
     REQUIRE(image.width() == 5);
     REQUIRE(image.height() == 3);
 }
 
-TEST_CASE("render colours the pixels whose ray hits the sphere: a plus", "[camera]") {
+TEST_CASE("render: centre pixel is full red, neighbours are 0.8 red", "[camera]") {
     Camera camera(Vector(0, 0, -1), Vector(0, 0, 0), 5);
-    Sphere sphere(Vector(0, 0, 6), 5, Colour(1, 0, 0));
+    Sphere sphere(Vector(0, 0, 6), 5, Material(Colour(1, 0, 0)));
+    Vector toLight(0, 0, -1);
 
-    Image image = camera.render(sphere, 5, 3);
+    Image image = camera.render(sphere, toLight, 5, 3);
 
-    std::vector<std::string> expected = {
-        "..#..",
-        ".###.",
-        "..#..",
-    };
-    for (int row = 0; row < 3; row++) {
-        for (int column = 0; column < 5; column++) {
-            if (expected[row][column] == '#') {
-                requireColoursEqual(image.pixel(column, row), Colour(1, 0, 0));
-            } else {
-                requireColoursEqual(image.pixel(column, row), Colour(0, 0, 0));
-            }
-        }
-    }
+    // Centre pixel (2,1): normal (0,0,-1), toLight (0,0,-1) → cosine 1 → full red
+    requireColoursEqual(image.pixel(2, 1), Colour(1, 0, 0));
+    // Neighbours (1,1),(3,1),(2,0),(2,2): cosine 0.8 → 0.8 red
+    requireColoursEqual(image.pixel(1, 1), Colour(0.8, 0, 0));
+    requireColoursEqual(image.pixel(3, 1), Colour(0.8, 0, 0));
+    requireColoursEqual(image.pixel(2, 0), Colour(0.8, 0, 0));
+    requireColoursEqual(image.pixel(2, 2), Colour(0.8, 0, 0));
+    // Corners and far pixels are black
+    requireColoursEqual(image.pixel(0, 0), Colour(0, 0, 0));
+    requireColoursEqual(image.pixel(4, 0), Colour(0, 0, 0));
+    requireColoursEqual(image.pixel(0, 2), Colour(0, 0, 0));
+    requireColoursEqual(image.pixel(4, 2), Colour(0, 0, 0));
 }

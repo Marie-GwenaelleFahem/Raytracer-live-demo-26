@@ -10,3 +10,15 @@ TEST_CASE("a ray gives back its origin and direction", "[ray]") {
     requireVectorsEqual(ray.origin(), Vector(1, 2, 3));
     requireVectorsEqual(ray.direction(), Vector(3, 4, 0));
 }
+
+TEST_CASE("ray at t=0 gives the origin", "[ray]") {
+    Ray ray(Vector(0, 8, 0), Vector(3, -4, 0));
+
+    requireVectorsEqual(ray.at(0), Vector(0, 8, 0));
+}
+
+TEST_CASE("ray at t=2 gives origin plus 2 times direction", "[ray]") {
+    Ray ray(Vector(0, 8, 0), Vector(3, -4, 0));
+
+    requireVectorsEqual(ray.at(2), Vector(6, 0, 0));
+}
