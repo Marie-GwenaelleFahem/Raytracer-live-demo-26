@@ -1,5 +1,4 @@
 include(FetchContent)
-
 FetchContent_Declare(
   Catch2
   GIT_REPOSITORY https://github.com/catchorg/Catch2.git
@@ -8,17 +7,18 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(Catch2)
 
 add_executable(raytracer_tests
-    placeholder_test.cpp
-    test_helpers.cpp
-    math/vector/vector_test.cpp
-    colour/test_colour.cpp
-    geometry/test_ray.cpp
-    geometry/test_sphere.cpp
-    render/test_camera.cpp
-    render/test_trace.cpp
+  test_helpers.cpp
+  colour/test_colour.cpp
+  geometry/test_ray.cpp
+  geometry/test_sphere.cpp
+  math/vector/vector_test.cpp
+  render/test_camera.cpp
+  render/test_trace.cpp
+  image/test_image.cpp
+  output/test_png_saver.cpp
 )
 target_include_directories(raytracer_tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
-target_link_libraries(raytracer_tests PRIVATE Catch2::Catch2WithMain raytracer_lib)
+target_link_libraries(raytracer_tests PRIVATE raytracer_core raytracer_warnings lodepng Catch2::Catch2WithMain)
 
 include(CTest)
 include(Catch)
