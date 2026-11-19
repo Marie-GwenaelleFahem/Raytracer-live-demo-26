@@ -1,5 +1,6 @@
 #include <catch2/catch_test_macros.hpp>
 
+#include <memory>
 #include <string>
 #include <vector>
 
@@ -10,9 +11,9 @@
 #include "material/material.h"
 #include "math/vector.h"
 #include "render/camera.h"
+#include "scene/scene.h"
 #include "test_helpers.h"
 
-// This morning's tests: the one pixel of a 1 by 1 image is the centre of the screen.
 TEST_CASE("in a 1 by 1 image, the ray goes from the eye to the screen centre", "[camera]") {
     Camera camera(Vector(0, 0, -1), Vector(0, 0, 0), 2);
 
@@ -61,10 +62,10 @@ TEST_CASE("the bottom-left pixel's ray goes left and down", "[camera]") {
 
 TEST_CASE("render gives an image of the size asked for", "[camera]") {
     Camera camera(Vector(0, 0, -1), Vector(0, 0, 0), 5);
-    Sphere sphere(Vector(0, 0, 6), 5, Material(Colour(1, 0, 0)));
-    Vector toLight(0, 0, -1);
+    Scene scene(Vector(0, 0, -1));
+    scene.add(std::make_unique<Sphere>(Vector(0, 0, 6), 5, Material(Colour(1, 0, 0))));
 
-    Image image = camera.render(sphere, toLight, 5, 3);
+    Image image = camera.render(scene, 5, 3);
 
     REQUIRE(image.width() == 5);
     REQUIRE(image.height() == 3);
@@ -72,10 +73,10 @@ TEST_CASE("render gives an image of the size asked for", "[camera]") {
 
 TEST_CASE("render: centre pixel is full red, neighbours are 0.8 red", "[camera]") {
     Camera camera(Vector(0, 0, -1), Vector(0, 0, 0), 5);
-    Sphere sphere(Vector(0, 0, 6), 5, Material(Colour(1, 0, 0)));
-    Vector toLight(0, 0, -1);
+    Scene scene(Vector(0, 0, -1));
+    scene.add(std::make_unique<Sphere>(Vector(0, 0, 6), 5, Material(Colour(1, 0, 0))));
 
-    Image image = camera.render(sphere, toLight, 5, 3);
+    Image image = camera.render(scene, 5, 3);
 
     // Centre pixel (2,1): normal (0,0,-1), toLight (0,0,-1) → cosine 1 → full red
     requireColoursEqual(image.pixel(2, 1), Colour(1, 0, 0));

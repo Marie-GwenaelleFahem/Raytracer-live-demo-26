@@ -50,3 +50,15 @@ TEST_CASE("a sphere behind the ray returns no hit", "[sphere]") {
 
     REQUIRE_FALSE(sphere.hit(ray).has_value());
 }
+
+TEST_CASE("a ray starting inside the sphere exits at t=7, normal (0,0,1)", "[sphere]") {
+    Ray ray(Vector(0, 0, 0), Vector(0, 0, 1));
+    Sphere sphere(Vector(0, 0, 1), 5, Material(Colour(1, 0, 0)));
+
+    auto hit = sphere.hit(ray);
+
+    REQUIRE(hit.has_value());
+    REQUIRE_THAT(hit->t, WithinAbs(6.0, tolerance));
+    requireVectorsEqual(hit->point, Vector(0, 0, 6));
+    requireVectorsEqual(hit->normal, Vector(0, 0, 1));
+}

@@ -17,6 +17,8 @@ add_executable(raytracer_tests
   image/test_image.cpp
   output/test_png_saver.cpp
   material/test_material.cpp
+  geometry/test_plane.cpp
+  scene/test_scene.cpp
 )
 target_include_directories(raytracer_tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(raytracer_tests PRIVATE raytracer_core raytracer_warnings lodepng Catch2::Catch2WithMain)
